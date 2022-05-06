@@ -1,3 +1,23 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  <!-- not intended to be viewed on burgeritodev.github.io,intended for lucasdev.cf! -->
+
+  <div id="app">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script>
+    import "./style.css";
+
+    const rive = require("@rive-app/canvas");
+
+    new rive.Rive({
+      src: "bandu_anim.riv",
+      canvas: document.getElementById("canvas"),
+      autoplay: true
+    });
+
+    </script>
 </body>
